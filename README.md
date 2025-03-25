@@ -1,37 +1,37 @@
 # AI ZK Verifier
 
-## Zadatak  
-Implementacija dokaza ispravnosti inferencije modela strojnog učenja na blockchainu.  
+## Task  
+Implementation of proof of correctness for AI model inference on blockchain.  
 
-## 🎯 Cilj  
-Implementirati i analizirati sustav u kojem se rezultati inferencije AI modela izračunavaju i verificiraju korištenjem tehnika provjerljivog računarstva, dok blockchain služi kao sloj povjerenja i revizije.  
+## Goal  
+Develop and analyze a system where AI model inference results are computed and verified using verifiable computing techniques, with blockchain serving as a trust and audit layer.  
 
-## 📖 Opis  
+## Description  
 
-1. **Odabir AI modela**  
-   - Odabrati jednostavni, ali učinkovit AI model (npr. neuronsku mrežu za klasifikaciju slika ili neki već korišten u laboratoriju).  
-   - Analizirati računalnu složenost inferencije.  
+1. **AI Model Selection**  
+   - Choose a simple yet effective AI model (e.g., a neural network for image classification or an existing model used in the lab).  
+   - Analyze the computational complexity of inference.  
 
-2. **Provjerljivo računarstvo**  
-   - Istražiti tehnike poput **zk-SNARKs** ili **zk-STARKs** za generiranje dokaza ispravnosti AI inferencije.  
-   - Alternativno, koristiti **zkVM virtualni stroj** (npr. Risc0) za generiranje dokaza o ispravnom izvršavanju inferencije.  
+2. **Verifiable Computing**  
+   - Explore techniques such as **zk-SNARKs** or **zk-STARKs** for generating proofs of AI inference correctness.  
+   - Alternatively, use a **zkVM virtual machine** (e.g., Risc0) to generate proofs of correct inference execution.  
 
-3. **Blockchain integracija**  
-   - Implementirati **pametni ugovor** na blockchain platformi (Ethereum ili testnet u laboratoriju).  
-   - Verificirati generirani dokaz ispravnosti.  
-   - Opcionalno, pohraniti verificirani rezultat i povezani dokaz na blockchain radi revizije.  
+3. **Blockchain Integration**  
+   - Implement a **smart contract** on a blockchain platform (Ethereum or a testnet in the lab).  
+   - Verify the generated proof of correctness.  
+   - Optionally, store the verified result and associated proof on the blockchain for auditing.  
 
-4. **Decentralizirana aplikacija (opcionalno)**  
-   - Kreirati jednostavno korisničko sučelje za prijenos ulaznih podataka i preuzimanje verificiranih rezultata.  
+4. **Decentralized Application (Optional)**  
+   - Create a simple user interface where users can upload input data for inference and retrieve verified results.  
 
-## 🛠️ Tehnologije  
-- **AI model**: PyTorch / TensorFlow  
-- **Provjerljivo računarstvo**: zk-SNARKs, zk-STARKs, Risc0  
+## Technologies  
+- **AI Model**: PyTorch / TensorFlow  
+- **Verifiable Computing**: zk-SNARKs, zk-STARKs, Risc0  
 - **Blockchain**: Solana, zkVM  
-- **Frontend (opcionalno)**: React, Next.js  
+- **Frontend (Optional)**: React, Next.js  
 
-## 🚀 Kako pokrenuti  
-Dolazi uskoro...  
+## How to Run  
+Coming soon...  
 
-## 📜 Licenca  
+## License  
 MIT  
