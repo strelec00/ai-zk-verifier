@@ -41,7 +41,7 @@ def predict(image_path):
     print(f"Predicted: {class_names[predicted.item()]}, Confidence: {confidence:.4f}")
 
     # Provjera povjerenja (ako povjerenje nije dovoljno visoko, prijavi grešku)
-    if confidence < 0.999:  # Prag povjerenja 70%
+    if confidence < 0.999:  # Prag povjerenja 99
         raise ValueError("Slika nije prepoznata kao pas ili mačka (nisko povjerenje).")
 
 if __name__ == "__main__":
