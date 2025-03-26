@@ -42,7 +42,7 @@ def predict(image_path):
 
     # Provjera povjerenja (ako povjerenje nije dovoljno visoko, prijavi grešku)
     if confidence < 0.999:  # Prag povjerenja 99
-        raise ValueError("Slika nije prepoznata kao pas ili mačka (nisko povjerenje).")
+        raise ValueError("Slika nije prepoznata kao pas ili mačka.")
 
 if __name__ == "__main__":
     image_path = sys.argv[1]  # Putanja do slike iz komandne linije
