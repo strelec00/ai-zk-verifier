@@ -10,8 +10,10 @@ matplotlib==3.10.1
 mpmath==1.3.0
 networkx==3.4.2
 numpy==2.2.4
+onnx==1.17.0
 packaging==24.2
 pillow==11.1.0
+protobuf==6.30.1
 pyparsing==3.2.3
 python-dateutil==2.9.0.post0
 setuptools==78.1.0
