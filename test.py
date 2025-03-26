@@ -1,19 +1,16 @@
+import onnxruntime as ort
+import numpy as np
 import torch
 import torchvision.transforms as transforms
-from torchvision import models
 from PIL import Image
-from torchvision.models import ResNet18_Weights
 import sys
 
 # Postavke uređaja
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Učitavanje treniranog modela
-model = models.resnet18(weights=ResNet18_Weights.IMAGENET1K_V1)
-model.fc = torch.nn.Linear(model.fc.in_features, 2)
-model.load_state_dict(torch.load("cat_dog_classifier.pth"))
-model = model.to(device)
-model.eval()
+# Učitavanje ONNX modela
+onnx_model_path = "cat_dog_classifier.onnx"
+ort_session = ort.InferenceSession(onnx_model_path)
 
 # Transformacije za test sliku
 transform = transforms.Compose([
@@ -22,16 +19,23 @@ transform = transforms.Compose([
     transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
 ])
 
-# Funkcija za predviđanje slike
+# Funkcija za predviđanje slike koristeći ONNX
 def predict(image_path):
     image = Image.open(image_path)
-    image = transform(image).unsqueeze(0).to(device)  # Dodaj batch dimenziju
+    image = transform(image).unsqueeze(0)  # Dodaj batch dimenziju
+    image = image.numpy()  # Pretvori u numpy array
 
-    with torch.no_grad():
-        output = model(image)
-        probabilities = torch.nn.functional.softmax(output, dim=1)
-        _, predicted = torch.max(probabilities, 1)
-        confidence = probabilities[0][predicted].item()  # Povjerenje za predviđenu klasu
+    # Priprema za ONNX model
+    input_name = ort_session.get_inputs()[0].name
+    output_name = ort_session.get_outputs()[0].name
+
+    # Pokretanje inferencije
+    result = ort_session.run([output_name], {input_name: image})
+
+    # Softmax za vjerojatnost
+    probabilities = torch.nn.functional.softmax(torch.tensor(result[0]), dim=1)
+    _, predicted = torch.max(probabilities, 1)
+    confidence = probabilities[0][predicted].item()  # Povjerenje za predviđenu klasu
 
     class_names = ["Cat", "Dog"]
     print(f"Predicted: {class_names[predicted.item()]}, Confidence: {confidence:.4f}")
