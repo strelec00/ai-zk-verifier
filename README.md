@@ -1,4 +1,4 @@
-# AI ZK Verifier
+# AI ZK Verifier ⛓️‍💥
 
 ## Task  
 Implementation of proof of correctness for AI model inference on blockchain.  
@@ -25,8 +25,8 @@ Develop and analyze a system where AI model inference results are computed and v
    - Create a simple user interface where users can upload input data for inference and retrieve verified results.  
 
 ## Technologies  
-- **AI Model**: PyTorch / TensorFlow  
-- **Verifiable Computing**: zk-SNARKs, zk-STARKs, Risc0  
+- **ML Model**: PyTorch / TensorFlow -> ONNX format
+- **Verifiable Computing**: zkVM, Risc0  
 - **Blockchain**: Solana, zkVM  
 - **Frontend (Optional)**: React, Next.js  
 
