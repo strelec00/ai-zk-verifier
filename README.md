@@ -1,10 +1,7 @@
 # AI ZK Verifier ⛓️‍💥
 
-## Description  
-A zero-knowledge proof system using RISC Zero zkVM to create proofs that ML model interference was right. Solana blockchain is used as a verifier.
-
 ## Goal  
-Develop and analyze a system where AI model inference results are computed and verified using verifiable computing techniques, with blockchain serving as a trust and audit layer.  
+A zero-knowledge proof system using RISC Zero zkVM to create proofs that ML model interference was right. Solana blockchain is used as a verifier.
 
 ## Description  
 
