@@ -22,7 +22,7 @@ A zero-knowledge proof system using RISC Zero zkVM to create proofs that ML mode
    - Create a simple user interface where users can upload input data for inference and retrieve verified results.  
 
 ## Technologies  
-- **ML Model**: PyTorch / TensorFlow -> ONNX forma
+- **ML Model**: PyTorch / TensorFlow -> ONNX format
 - **Verifiable Computing**: zkVM, Risc0  
 - **Blockchain**: Solana, zkVM  
 - **Frontend (Optional)**: React, Next.js  
