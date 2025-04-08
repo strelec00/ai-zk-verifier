@@ -1,11 +1,14 @@
 [package]
-name = "host"
+name = "hello-world"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-multiply-methods = { path = "../methods" }
+hello-world-methods = { path = "methods" }
 risc0-zkvm = { version = "^2.0.1" }
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
-serde = "1.0"
-bincode = "1.3.3"
+
+[features]
+cuda = ["risc0-zkvm/cuda"]
+default = []
+prove = ["risc0-zkvm/prove"]
