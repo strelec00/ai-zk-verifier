@@ -9,14 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffcc10db-97f3-4b58-b52d-048036059a6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../multiply/host/src/bin/prove.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiply/host/src/bin/verify.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiply/host/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../multiply/host/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiply/host/src/main.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiply/methods/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../multiply/methods/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiply/methods/guest/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../multiply/methods/guest/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiply/methods/guest/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../multiply/methods/guest/src/bin/multiply.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +101,8 @@
       <workItem from="1744062076829" duration="659000" />
       <workItem from="1744063491016" duration="51000" />
       <workItem from="1744105626171" duration="618000" />
-      <workItem from="1744117098154" duration="2339000" />
+      <workItem from="1744117098154" duration="3751000" />
+      <workItem from="1744139460657" duration="792000" />
     </task>
     <servers />
   </component>

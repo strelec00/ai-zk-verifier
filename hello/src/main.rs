@@ -13,7 +13,7 @@
 // limitations under the License.
 
 use hello_world::multiply;
-use hello_world_methods::MULTIPLY_ID;
+use hello_world_methods::;
 
 fn main() {
     tracing_subscriber::fmt()

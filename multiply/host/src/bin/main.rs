@@ -21,7 +21,7 @@ fn main() {
         .init();
 
     // Pick two numbers
-    let (receipt,_) = multiply(10,23);
+    let (receipt,_) = prediction(/*Image url*/);
     // Here is where one would send 'receipt' over the network...
 
     // Verify receipt, panic if it's wrong
