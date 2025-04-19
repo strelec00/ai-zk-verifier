@@ -1,16 +1,17 @@
-# AI ZK Verifier ⛓️‍💥
+# ZKML Solana ⛓️‍💥
 
 ## Goal  
-A zero-knowledge proof system using RISC Zero zkVM to create proofs that ML model interference was right. Solana blockchain is used as a verifier.
+A zero-knowledge proof system using the EZKL library with ONNX-format models to generate proofs that machine learning inference was performed correctly. The Solana blockchain is used as a verifier.
 
 ## Description  
 
 1. **AI Model Selection**  
-   - Choose a simple yet effective AI model (e.g., a neural network for image classification or an existing model used in the lab).  
+   - Choose a simple yet effective AI model (e.g., a neural network for image classification or an existing model used in the lab).
+   - Export the model to **ONNX format** for compatibility with the EZKL library.  
    - Analyze the computational complexity of inference.  
 
 2. **Verifiable Computing**  
-   - Explore techniques such as **zk-SNARKs** or **zk-STARKs** for generating proofs of AI inference correctness.  
+   - Use the **EZKL** library to generate zero-knowledge proofs of correct model inference.
    - Alternatively, use a **zkVM virtual machine** (e.g., Risc0) to generate proofs of correct inference execution.  
 
 3. **Blockchain Integration**  
@@ -23,8 +24,8 @@ A zero-knowledge proof system using RISC Zero zkVM to create proofs that ML mode
 
 ## Technologies  
 - **ML Model**: PyTorch / TensorFlow -> ONNX format
-- **Verifiable Computing**: zkVM, Risc0  
-- **Blockchain**: Solana, zkVM  
+- **Verifiable Computing**: EZKL, *zkVM, *Risc0  
+- **Blockchain**: Solana  
 - **Frontend (Optional)**: React, Next.js  
 
 ## How to Run  
